@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --ink: #0b1437;
+    --navy: #14286b;
+    --paper: #f4f5f8;
+    --line: #d5d9e3;
+    --muted: #4f5a78;
+    --salud: #0f7b6c;
+    --arte: #8a3a8f;
+    --edu: #e0951f;
+}
+
+html, body, .stApp { font-family: 'Inter', sans-serif; }.stApp { background: var(--paper); }
+
+/* Chrome de Streamlit fuera */
+footer, #MainMenu, [data-testid="stToolbar"], [data-testid="stDecoration"] { display: none !important; }
+header[data-testid="stHeader"] { background: transparent; }
+[data-testid="stHeaderActionElements"] { display: none; }
+.block-container { max-width: 1280px; padding: 2.2rem 2.5rem 3rem 2.5rem; }
+
+h1, h2, h3, .display { font-family: 'Bricolage Grotesque', sans-serif; color: var(--ink); letter-spacing: -0.03em; }
+
+/* Barra tricolor: las tres líneas prioritarias */
+.tri { width: 84px; height: 6px; margin: 18px 0 22px 0;
+    background: linear-gradient(90deg, var(--salud) 0 25%, var(--arte) 0 50%, var(--edu) 0 75%, var(--navy) 0); }
+
+/* Inicio */
+.instituto { color: var(--muted); font-weight: 500; font-size: 1rem; margin: 22px 0 14px 0; }
+.display { font-size: clamp(3rem, 6vw, 5.2rem); font-weight: 800; line-height: 0.95; margin: 0; }
+.lead { color: var(--muted); font-size: 1.15rem; line-height: 1.55; max-width: 44ch; margin: 0 0 26px 0; }
+
+/* Estadísticas planas */
+.stat { border-top: 2px solid var(--ink); padding-top: 10px; }
+.stat .num { font-family: 'Bricolage Grotesque', sans-serif; font-size: 2.6rem; font-weight: 800; color: var(--ink); line-height: 1; letter-spacing: -0.03em; }
+.stat .lbl { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+
+.section-title { font-weight: 600; color: var(--ink); font-size: 0.95rem; margin: 22px 0 8px 0; }
+
+/* Botones: casi rectos, sólidos */
+div.stButton > button, div.stDownloadButton > button {
+    border-radius: 6px; font-weight: 600; padding: 0.55rem 1.1rem;
+    border: 1.5px solid var(--ink); background: transparent; color: var(--ink);
+    transition: background .12s, color .12s;
+}
+div.stButton > button:hover, div.stDownloadButton > button:hover { background: var(--ink); color: #fff; border-color: var(--ink); }
+div.stButton > button[kind="primary"] { background: var(--ink); color: #fff; padding: 0.85rem 2rem; font-size: 1.05rem; }
+div.stButton > button[kind="primary"]:hover { background: var(--navy); border-color: var(--navy); }
+
+/* Buscador y tabla */
+.stTextInput input { border-radius: 6px; border: 1.5px solid var(--line); background: #fff; padding: 0.7rem 1rem; }
+.stTextInput input:focus { border-color: var(--ink); box-shadow: none; }
+[data-testid="stDataFrame"] { border: 1.5px solid var(--ink); border-radius: 6px; overflow: hidden; }
+
+hr { border: none; border-top: 1px solid var(--line); margin: 22px 0; }
+
+/* ===== Filtros: barra segmentada ===== */
+[role="radiogroup"][aria-label="Programa"],
+[role="radiogroup"][aria-label="Línea"] { display: flex; flex-wrap: wrap; gap: 0 !important; }
+
+button[data-variant="pills"] {
+    border-radius: 0 !important;
+    border: 1.5px solid var(--ink) !important;
+    margin-left: -1.5px;
+    background: #fff !important;
+    padding: 0.6rem 1.25rem !important;
+    min-height: 46px;
+    transition: background .12s, color .12s;
+}
+button[data-variant="pills"]:first-child { border-radius: 6px 0 0 6px !important; margin-left: 0; }
+button[data-variant="pills"]:last-child  { border-radius: 0 6px 6px 0 !important; }
+button[data-variant="pills"] p { font-weight: 600; font-size: 0.95rem; color: var(--ink); }
+button[data-variant="pills"]:hover { background: #e9ebf3 !important; }
+
+/* Activo: relleno sólido, texto blanco */
+button[data-variant="pills"][aria-checked="true"] { background: var(--ink) !important; position: relative; z-index: 1; }
+button[data-variant="pills"][aria-checked="true"],
+button[data-variant="pills"][aria-checked="true"] * { color: #fff !important; }
+
+/* Líneas prioritarias: cada una con su color */
+[role="radiogroup"][aria-label="Línea"] button[data-variant="pills"] { border-bottom-width: 5px !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(1) { border-bottom-color: var(--salud) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(2) { border-bottom-color: var(--arte) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(3) { border-bottom-color: var(--edu) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(1)[aria-checked="true"] { background: var(--salud) !important; border-color: var(--salud) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(2)[aria-checked="true"] { background: var(--arte) !important; border-color: var(--arte) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(3)[aria-checked="true"] { background: var(--edu) !important; border-color: var(--edu) !important; }
+[role="radiogroup"][aria-label="Línea"] button:nth-child(3)[aria-checked="true"],
+[role="radiogroup"][aria-label="Línea"] button:nth-child(3)[aria-checked="true"] * { color: var(--ink) !important; }
+
+/* Botón del mapa PEIDI con logo */
+.btn-mapa-wrap { display: flex; justify-content: flex-end; }
+.btn-mapa {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #fff; border: 1.5px solid var(--ink); border-radius: 6px;
+    padding: 6px 16px 6px 8px; text-decoration: none !important;
+    transition: box-shadow .12s, transform .12s;
+}
+.btn-mapa img { height: 36px; width: auto; display: block; }
+.btn-mapa span { color: var(--ink); font-weight: 600; font-size: 0.95rem; }
+.btn-mapa:hover { box-shadow: 3px 3px 0 var(--ink); transform: translate(-2px, -2px); }
+
+/* Botón moderno para I-PEIDI debajo del mapa */
+.btn-ipeidi {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fff;
+    border: 1.5px solid var(--ink);
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-decoration: none !important;
+    color: var(--ink);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: box-shadow .12s, transform .12s, background .12s, color .12s;
+    width: 100%;
+    box-sizing: border-box;
+}
+.btn-ipeidi:hover {
+    background: var(--ink);
+    color: #fff;
+    box-shadow: 3px 3px 0 var(--ink);
+    transform: translate(-2px, -2px);
+}
+/* Contenedor y ajuste moderno para las imágenes de equipamiento */
+.eq-card {
+    border: 1.5px solid var(--line);
+    border-radius: 8px;
+    padding: 14px;
+    background: #fff;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    transition: box-shadow .15s ease;
+}
+.eq-card:hover {
+    box-shadow: 0 4px 12px rgba(11, 20, 55, 0.08);
+}
+.eq-img-container {
+    width: 100%;
+    height: 160px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #f8f9fc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.eq-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mantiene la proporción de la foto sin cortarla feo */
+    transition: transform .2s ease;
+}
+.eq-card:hover .eq-img-container img {
+    transform: scale(1.03);
+}
+
+/* Marca de agua flotante INVEST en la esquina superior derecha */
+.invest-watermark {
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    width: 260px;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 99;
+}
