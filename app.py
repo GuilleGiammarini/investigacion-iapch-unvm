@@ -167,40 +167,40 @@ VINCULOS_INSTITUCIONALES = {
 
 EQUIPAMIENTO_LABS = {
     "LAB EDUCACIÓN Y SALUD": [
-        {"nombre": "Anatomage Table", "desc": "Disección virtual y visualización de anatomía 3D.", "foto": "assets/equipos/anatomage_table.jpg"},
-        {"nombre": "CAE ARES", "desc": "Maniquí de atención de emergencia.", "foto": "assets/equipos/cae_ares.jpg"},
-        {"nombre": "Simulador Pediátrico", "desc": "Simulador avanzado multipropósito Mike/Michelle.", "foto": "assets/equipos/simulador_pediatrico.jpg"},
-        {"nombre": "Simulador Clinical Chloe", "desc": "Simulador de paciente para enfermería.", "foto": "assets/equipos/simulador_clinical_chloe.jpg"},
-        {"nombre": "Noelle® Simulador de Parto", "desc": "Maniquí con bebé articulado en parto y placenta.", "foto": "assets/equipos/noelle_simulador_de_parto.jpg"},
-        {"nombre": "Simulador Geriátrico Teri", "desc": "Cuidado de pacientes ancianos.", "foto": "assets/equipos/simulador_geriatrico_teri.jpg"},
-        {"nombre": "4 Torsos de RCP BasicBilly", "desc": "Kit de actualización de CPR directa.", "foto": "assets/equipos/4_torsos_de_rcp_basicbilly.jpg"},
-        {"nombre": "3 Entrenadores de Sutura", "desc": "Práctica de sutura en extremidades.", "foto": "assets/equipos/3_entrenadores_de_sutura.jpg"},
-        {"nombre": "3 Brazos de Entrenamiento Venoso", "desc": "Venopunción y administración IV.", "foto": "assets/equipos/3_brazos_de_entrenamiento_venoso.jpg"}
+        {"nombre": "Anatomage Table", "desc": "Disección virtual y visualización de anatomía 3D.", "foto": "assets/EQUIPOS/anatomage_table.jpg"},
+        {"nombre": "CAE ARES", "desc": "Maniquí de atención de emergencia.", "foto": "assets/EQUIPOS/cae_ares.jpg"},
+        {"nombre": "Simulador Pediátrico", "desc": "Simulador avanzado multipropósito Mike/Michelle.", "foto": "assets/EQUIPOS/simulador_pediatrico.jpg"},
+        {"nombre": "Simulador Clinical Chloe", "desc": "Simulador de paciente para enfermería.", "foto": "assets/EQUIPOS/simulador_clinical_chloe.jpg"},
+        {"nombre": "Noelle® Simulador de Parto", "desc": "Maniquí con bebé articulado en parto y placenta.", "foto": "assets/EQUIPOS/noelle_simulador_de_parto.jpg"},
+        {"nombre": "Simulador Geriátrico Teri", "desc": "Cuidado de pacientes ancianos.", "foto": "assets/EQUIPOS/simulador_geriatrico_teri.jpg"},
+        {"nombre": "4 Torsos de RCP BasicBilly", "desc": "Kit de actualización de CPR directa.", "foto": "assets/EQUIPOS/4_torsos_de_rcp_basicbilly.jpg"},
+        {"nombre": "3 Entrenadores de Sutura", "desc": "Práctica de sutura en extremidades.", "foto": "assets/EQUIPOS/3_entrenadores_de_sutura.jpg"},
+        {"nombre": "3 Brazos de Entrenamiento Venoso", "desc": "Venopunción y administración IV.", "foto": "assets/EQUIPOS/3_brazos_de_entrenamiento_venoso.jpg"}
     ],
     "LAB SALUD Y CIENCIA DE DATOS": [
-        {"nombre": "Instrumentos de Evaluación Diagnóstica", "desc": "Perfiles diagnósticos.", "foto": "assets/equipos/instrumentos_de_evaluacion_diagnostica.jpg"},
-        {"nombre": "Servidores y Sistemas de Datos", "desc": "Reuniones virtuales y bases de datos.", "foto": "assets/equipos/computadoras_para_reuniones_virtuales.jpg"},
-        {"nombre": "Equipamiento de Laboratorio Químico", "desc": "Balanza, HPLC, campanas de flujo.", "foto": "assets/equipos/balanza_medidor_de_ph_campanas.jpg"},
-        {"nombre": "Aparatología Ambiental", "desc": "Material particulado y EPP.", "foto": "assets/equipos/aparatologia_para_material_particulado.jpg"},
-        {"nombre": "Workstations y Software", "desc": "PC y software Stata/InfoStat.", "foto": "assets/equipos/pc_box_docente_impresora.jpg"},
-        {"nombre": "Notebook GIGABYTE AERO 16", "desc": "Intel Core i7, 32GB RAM, RTX 3060P.", "foto": "assets/equipos/notebook_gigabyte_aero_16.jpg"},
-        {"nombre": "Monitor Samsung F350 Flat 27\"", "desc": "Modelo 271350fhl - CIT-VM.", "foto": "assets/equipos/monitor_samsung_f350_flat_27.jpg"},
-        {"nombre": "CPU Intel Core i5 / RX580", "desc": "CPU i5-12400, RX580 8GB.", "foto": "assets/equipos/cpu_intel_core_i5_12400.jpg"}
+        {"nombre": "Instrumentos de Evaluación Diagnóstica", "desc": "Perfiles diagnósticos.", "foto": "assets/EQUIPOS/instrumentos_de_evaluacion_diagnostica.jpg"},
+        {"nombre": "Servidores y Sistemas de Datos", "desc": "Reuniones virtuales y bases de datos.", "foto": "assets/EQUIPOS/computadoras_para_reuniones_virtuales.jpg"},
+        {"nombre": "Equipamiento de Laboratorio Químico", "desc": "Balanza, HPLC, campanas de flujo.", "foto": "assets/EQUIPOS/balanza_medidor_de_ph_campanas.jpg"},
+        {"nombre": "Aparatología Ambiental", "desc": "Material particulado y EPP.", "foto": "assets/EQUIPOS/aparatologia_para_material_particulado.jpg"},
+        {"nombre": "Workstations y Software", "desc": "PC y software Stata/InfoStat.", "foto": "assets/EQUIPOS/pc_box_docente_impresora.jpg"},
+        {"nombre": "Notebook GIGABYTE AERO 16", "desc": "Intel Core i7, 32GB RAM, RTX 3060P.", "foto": "assets/EQUIPOS/notebook_gigabyte_aero_16.jpg"},
+        {"nombre": "Monitor Samsung F350 Flat 27\"", "desc": "Modelo 271350fhl - CIT-VM.", "foto": "assets/EQUIPOS/monitor_samsung_f350_flat_27.jpg"},
+        {"nombre": "CPU Intel Core i5 / RX580", "desc": "CPU i5-12400, RX580 8GB.", "foto": "assets/EQUIPOS/cpu_intel_core_i5_12400.jpg"}
     ],
     "LAB ARTE": [
-        {"nombre": "Cámaras y Lentes UNVM", "desc": "Lic. en Diseño y Producción Audiovisual.", "foto": "assets/equipos/camaras_y_lentes_de_la_lic_en_diseno.jpg"},
-        {"nombre": "Micrófonos Corbateros y Boom UNVM", "desc": "Captura de audio profesional.", "foto": "assets/equipos/microfonos_corbateros_y_boom.jpg"},
-        {"nombre": "Miniproyector Videomapping PEIDI", "desc": "Videomapping equipo PEIDI.", "foto": "assets/equipos/miniproyector_para_videomapping.jpg"},
-        {"nombre": "Equipamiento de Post-producción", "desc": "Software y edición propia.", "foto": "assets/equipos/equipamiento_de_post_produccion.jpg"},
-        {"nombre": "Cámara 360º y Lentes Meta Quest", "desc": "Subsecretaría de Cultura Villa María.", "foto": "assets/equipos/camara_360.jpg"},
-        {"nombre": "Lentes Metaquest 360º", "desc": "Realidad inmersiva.", "foto": "assets/equipos/lentes_metaquest_360.jpg"},
-        {"nombre": "Tablets y Auriculares de Cultura", "desc": "Préstamo de Cultura.", "foto": "assets/equipos/tablets_y_auriculares.jpg"},
-        {"nombre": "Proyector IAPCH UNVM", "desc": "Proyector institucional.", "foto": "assets/equipos/proyector_iapch_unvm.jpg"},
-        {"nombre": "Grabador Zoom H6", "desc": "Audio digital profesional.", "foto": "assets/equipos/zoom_h6.jpg"},
-        {"nombre": "Micrófono ME64", "desc": "Micrófono con cable canon.", "foto": "assets/equipos/microfono_me64.jpg"},
-        {"nombre": "Pistola Sennheiser MZS 20-1", "desc": "Soporte de suspensión.", "foto": "assets/equipos/pistola_sennheiser_mzs_20_1.jpg"},
-        {"nombre": "Kit Zeppelin", "desc": "Antiviento para exteriores.", "foto": "assets/equipos/kit_zeppelin.jpg"},
-        {"nombre": "Corbatero Inalámbrico Sennheiser", "desc": "EW100 G3 y caña.", "foto": "assets/equipos/corbatero_inalambrico_sennheiser_ew100_g3.jpg"}
+        {"nombre": "Cámaras y Lentes UNVM", "desc": "Lic. en Diseño y Producción Audiovisual.", "foto": "assets/EQUIPOS/camaras_y_lentes_de_la_lic_en_diseno.jpg"},
+        {"nombre": "Micrófonos Corbateros y Boom UNVM", "desc": "Captura de audio profesional.", "foto": "assets/EQUIPOS/microfonos_corbateros_y_boom.jpg"},
+        {"nombre": "Miniproyector Videomapping PEIDI", "desc": "Videomapping equipo PEIDI.", "foto": "assets/EQUIPOS/miniproyector_para_videomapping.jpg"},
+        {"nombre": "Equipamiento de Post-producción", "desc": "Software y edición propia.", "foto": "assets/EQUIPOS/equipamiento_de_post_produccion.jpg"},
+        {"nombre": "Cámara 360º y Lentes Meta Quest", "desc": "Subsecretaría de Cultura Villa María.", "foto": "assets/EQUIPOS/camara_360.jpg"},
+        {"nombre": "Lentes Metaquest 360º", "desc": "Realidad inmersiva.", "foto": "assets/EQUIPOS/lentes_metaquest_360.jpg"},
+        {"nombre": "Tablets y Auriculares de Cultura", "desc": "Préstamo de Cultura.", "foto": "assets/EQUIPOS/tablets_y_auriculares.jpg"},
+        {"nombre": "Proyector IAPCH UNVM", "desc": "Proyector institucional.", "foto": "assets/EQUIPOS/proyector_iapch_unvm.jpg"},
+        {"nombre": "Grabador Zoom H6", "desc": "Audio digital profesional.", "foto": "assets/EQUIPOS/zoom_h6.jpg"},
+        {"nombre": "Micrófono ME64", "desc": "Micrófono con cable canon.", "foto": "assets/EQUIPOS/microfono_me64.jpg"},
+        {"nombre": "Pistola Sennheiser MZS 20-1", "desc": "Soporte de suspensión.", "foto": "assets/EQUIPOS/pistola_sennheiser_mzs_20_1.jpg"},
+        {"nombre": "Kit Zeppelin", "desc": "Antiviento para exteriores.", "foto": "assets/EQUIPOS/kit_zeppelin.jpg"},
+        {"nombre": "Corbatero Inalámbrico Sennheiser", "desc": "EW100 G3 y caña.", "foto": "assets/EQUIPOS/corbatero_inalambrico_sennheiser_ew100_g3.jpg"}
     ]
 }
 
